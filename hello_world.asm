@@ -22,7 +22,8 @@ _start:
     mov %ebx, 65
     mov %eax, 1 #exit_syscall
 
-    int 0x8
+    int 0x80
+
 .section .data
     input:
     .ascii "Hello World!"
